@@ -18,6 +18,9 @@ const TypewriterC = () => {
           ]}
         />
     </div> */}
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ut iste fugit, aut perferendis ipsam soluta expedita? Atque fuga nemo corrupti rem quo magni, tenetur ratione. Ut, similique eius ipsa minima voluptatibus facere quas amet culpa, magnam esse veritatis quod illum quos odio ullam quasi deserunt voluptatem. Dolorem modi, unde minus, harum minima iste molestias facilis vel quis eveniet, quia ab nesciunt ipsum? Pariatur quia voluptate quo sed at ipsa amet! Rerum minima laborum enim dolore eius! Veritatis, quas consequuntur quisquam possimus fugit cupiditate in? Perspiciatis, mollitia.
+    </div>
     </>
   )
 }

@@ -16,5 +16,13 @@ const config: Config = {
     },
   },
   plugins: [],
+  purge: {
+    content: [
+      './**/*.html',
+      './**/*.tsx',
+      './**/**/*.tsx',
+      // Add paths to your JSX/TSX files if you're using React
+    ],
+  }
 }
 export default config
