@@ -1,3 +1,5 @@
+"use client"
+
 import Image from '@/node_modules/next/image'
 import React from 'react'
 import Typewriter from './Typewriter'
@@ -10,7 +12,7 @@ const HeroSection = () => {
             <div className='h-full border border-1 border-green-500'>
                 <Typewriter />
             </div>
-            <div className='absolute h-20 w-20 bg-black left-1/4 right-2/4 top-3/4'>
+            <div className='absolute h-20 w-20 rounded-full bg-black left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/4'>
               
             </div>
             <div className='h-full border border-1 border-green-500'>

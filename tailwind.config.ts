@@ -17,12 +17,7 @@ const config: Config = {
   },
   plugins: [],
   purge: {
-    content: [
-      './**/*.html',
-      './**/*.tsx',
-      './**/**/*.tsx',
-      // Add paths to your JSX/TSX files if you're using React
-    ],
-  }
+    enabled: false, // Temporarily disable automatic content analysis
+  },
 }
 export default config
