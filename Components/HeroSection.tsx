@@ -16,7 +16,7 @@ const HeroSection = () => {
               
             </div>
             <div className='h-full border border-1 border-green-500'>
-              <Image src='/image.jpg' height='100' width='100' />
+              <Image alt='Profile Image' src='/image.jpg' height='100' width='100' />
             </div>
         </div>
     </>
