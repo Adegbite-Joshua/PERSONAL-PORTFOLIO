@@ -1,4 +1,7 @@
 'use client'
+import PropTypes from 'prop-types';
+
+
 
 const NavButton = ({name}) => {
   return (
@@ -7,5 +10,9 @@ const NavButton = ({name}) => {
     </>
   )
 }
+
+NavButton.propTypes = {
+  name: PropTypes.string.isRequired, // Require a string prop named "name"
+};
 
 export default NavButton

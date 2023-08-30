@@ -2,9 +2,7 @@
 
 import React from 'react'
 import NavButton from './NavButton'
-// import { useRouter } from 'next/router';
-// import Link from 'next/link';
-// import { useRouter } from '@/node_modules/next/router';
+import Link from 'next/link';
 
 
 const NavBar = () => {
@@ -18,7 +16,7 @@ const NavBar = () => {
     <>
         <div className='flex justify-center h-24'>
             <ul className='flex my-auto text-white gap-x-10 bg-white bg-opacity-10 p-3 rounded-lg shadow-lg'>
-                {/* <li><Link to='/'><NavButton name='ADEGBITE JOSHUA' /></Link></li> */}
+                <li><Link href='/'><NavButton name='ADEGBITE JOSHUA' /></Link></li>
                 <li><NavButton name='PROJECTS' /></li>
                 <li><NavButton name='RESUME' /></li>
                 <li><NavButton name='CONTACT ME' /></li>
