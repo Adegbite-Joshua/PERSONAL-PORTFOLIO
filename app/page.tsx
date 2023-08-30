@@ -1,3 +1,4 @@
+import HeroSection from '@/Components/HeroSection'
 import Image from 'next/image'
 
 import NavBar from "../Components/NavBar"
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <div>
         <NavBar />
+        <HeroSection />
       </div>
       
     </>

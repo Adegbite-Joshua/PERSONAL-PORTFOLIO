@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Adegbite Joshua Portfolio',
   description: 'My Personal Portfolio',
+  // favicon: '/image.jpg',
 }
 
 export default function RootLayout({

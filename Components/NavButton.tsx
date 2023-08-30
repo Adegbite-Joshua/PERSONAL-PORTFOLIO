@@ -1,9 +1,11 @@
 'use client'
 import PropTypes from 'prop-types';
 
+type Props = {
+  name: string
+}
 
-
-const NavButton = ({name}) => {
+const NavButton: React.FC<Props> = ({name}) => {
   return (
     <>
         <button id="NavButton">{name}</button>
@@ -12,7 +14,7 @@ const NavButton = ({name}) => {
 }
 
 NavButton.propTypes = {
-  name: PropTypes.string.isRequired, // Require a string prop named "name"
+  name: PropTypes.string.isRequired,
 };
 
 export default NavButton
