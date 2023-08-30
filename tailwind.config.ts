@@ -17,7 +17,13 @@ const config: Config = {
   },
   plugins: [],
   purge: {
-    enabled: false, // Temporarily disable automatic content analysis
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      './pages/**/*.{js,ts,jsx,tsx,mdx}',
+      './Components/*.{js,ts,jsx,tsx,mdx}',
+      './app/*.{js,ts,jsx,tsx,mdx}',
+    ],
   },
+  
 }
 export default config
