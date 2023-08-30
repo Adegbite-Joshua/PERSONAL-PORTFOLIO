@@ -30,13 +30,18 @@
 body {
   background-image: url(/background.jpg);
 }
+.background {
+  background-image: url(/image.jpg);
+  background-size: 100% 100%;
+  background-position: cover;
+}
+
+/* LANDING PAGE */
 
 /*
  NAV BAR STYLING 
  */
-
-
- #NavButton {
+#NavButton {
   text-transform: uppercase;
   border-radius: 8px;
   font-size: 17px;
@@ -62,4 +67,85 @@ body {
               0 0 20px #008cff,
               0 0 50px #008cff,
               0 0 100px #008cff;
+}
+
+/* SKILLS DIV */
+
+.cube-container {
+  width: 50px;
+  height: 50px;
+  perspective: 1000px;
+  /* margin: 50px auto; */
+}
+
+.cube {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transform-style: preserve-3d;
+  animation: rotate 8s infinite linear;
+  z-index: 99999999;
+}
+
+.face {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  color: rgb(214, 21, 21);
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  /* background: transparent; */
+  opacity: 0.9;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #ff6b6b, #355c7d, #557d35, #cfcf16, #a51f1f) 1;
+  box-shadow: 0 0 100px rgba(147, 137, 137, 0.8);
+  z-index: 99999999;
+}
+
+.front {
+  transform: translateZ(25px);
+  background-image: url(/html.png);
+  background-size: 100% 100%;
+  background-position: cover;
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(25px);
+  background-image: url(/javascript.png);
+  background-size: 100% 100%;
+  background-position: cover;
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(25px);
+  background-image: url(/css.png);
+  background-size: 100% 100%;
+  background-position: cover;
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(25px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(25px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(25px);
+}
+
+.cube-container:hover .cube {
+  animation-play-state: paused;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
 }
