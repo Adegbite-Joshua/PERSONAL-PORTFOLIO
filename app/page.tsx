@@ -1,16 +1,19 @@
-import HeroSection from '@/Components/HeroSection'
-import Image from 'next/image'
+'use client'
 
-import NavBar from "../Components/NavBar"
+import HeroSection from '@components/landingPage/HeroSection'
+import TechnologyStacks from '@components/landingPage/TechnologyStacks'
+// import Image from 'next/image'
+import '@jquery-setup.js'
+
+import NavBar from "../components/NavBar"
 
 export default function Home() {
   return (
-    <>
-      <div>
-        <NavBar />
-        <HeroSection />
-      </div>
-    </>
+    <div>
+      <NavBar />
+      <HeroSection />
+      <TechnologyStacks/>
+    </div>
   )
 }
 
